@@ -14,6 +14,9 @@ native:
 example: example.c native
 	$(CC) -o $@ $(CFLAGS) $(ARCHFLAGS) $< $(TARGET)
 
+graph_example: graph_example.c native
+	$(CC) -o $@ $(CFLAGS) $(ARCHFLAGS) $< $(TARGET)
+
 unittest: unittest.c native
 	$(CC) -o $@ $(CFLAGS) $(ARCHFLAGS) $< gaba.*.o
 
